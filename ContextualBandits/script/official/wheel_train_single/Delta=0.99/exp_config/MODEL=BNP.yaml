@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/ContextualBandits/result/official/wheel_train_single/Delta=0.99/MODEL=BNP

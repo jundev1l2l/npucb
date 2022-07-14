@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/ContextualBandits/result/train/example/MODEL=BNP

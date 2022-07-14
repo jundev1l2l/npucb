@@ -1,0 +1,32 @@
+# default config
+
+task: eval
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+bandit_algo_list: null
+
+data_sampler:
+    name: R6DataSampler
+    raw_dir: /data/R6NewsRecommendation/raw
+    processed_dir: /data/R6NewsRecommendation/processed
+    num_contexts: -1
+    day: [1,]
+    reward_balance: -1
+
+bandit_env:
+  name: R6BanditEnv
+  dim_context: 12
+
+evaluator:
+  name: R6Evaluator
+  num_exp: 1
+  num_steps: 25000
+  learn_ratio: 0.9
+  plot_comparison_shape: bar

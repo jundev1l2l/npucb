@@ -1,0 +1,47 @@
+result: /data/ContextualBandits/result/official/wheel_eval_sequentially_mixed_pretrain_single/PretrainDelta=0.50/ALGO=Baselines
+
+bandit_algo_list:
+  - name: random
+  - name: egreedy
+    epsilon: 0.1
+  - name: egreedy
+    epsilon: 0.05
+  - name: egreedy
+    epsilon: 0.02
+  - name: egreedy
+    epsilon: 0.01
+  - name: egreedy
+    epsilon: 0.0
+  - name: ucb1
+    alpha: 2.0
+  - name: ucb1
+    alpha: 1.44
+  - name: ucb1
+    alpha: 1.0
+  - name: ucb1
+    alpha: 0.5
+  - name: ucb1
+    alpha: 0.2
+  - name: ucb1
+    alpha: 0.1
+  - name: ucb1
+    alpha: 0.05
+  - name: ucb1
+    alpha: 0.01
+  - name: thompsonsampling
+  - name: linucb
+    alpha: 2.0
+  - name: linucb
+    alpha: 1.44
+  - name: linucb
+    alpha: 1.0
+  - name: linucb
+    alpha: 0.5
+  - name: linucb
+    alpha: 0.2
+  - name: linucb
+    alpha: 0.1
+  - name: linucb
+    alpha: 0.05
+  - name: linucb
+    alpha: 0.01

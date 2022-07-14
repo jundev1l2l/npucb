@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/R6NewsRecommendation/result/train/example/MODEL=BNP

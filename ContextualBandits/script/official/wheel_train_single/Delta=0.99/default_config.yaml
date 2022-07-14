@@ -1,0 +1,53 @@
+# default config
+
+task: train
+result: null
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+trainer:
+  name: NPTrainer
+  lr: 5.0e-4
+  num_epochs: 100
+  loss: nll
+  clip_loss: .0
+  val_freq: 1
+  save_freq: 1
+
+model:
+  name: null
+  dim_x: 3
+  dim_y: 1
+  dim_hid: 128
+  enc_v_depth: null
+  enc_qk_depth: null
+  enc_pre_depth: 2
+  enc_post_depth: 2
+  dec_depth: 2
+
+data_sampler:
+  name: WheelDataSampler
+  file_name: ""
+  dim_context: 2
+  num_arms: 5
+  num_contexts: -1
+  mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+  std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+  mean_large: 50
+  std_large: 0.01
+  delta: 0.99
+
+dataset:
+  name: NPRandomDataset
+  n_ctx_range: [10, 200]
+  n_tar_range: [1, 50]
+
+dataloader:
+  name: TorchDataloader
+  batch_size: 32

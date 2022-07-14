@@ -1,0 +1,4 @@
+model:
+  name: NP
+
+result: /data/R6NewsRecommendation/result/train/example/MODEL=NP

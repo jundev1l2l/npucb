@@ -1,0 +1,18 @@
+result: /data/ContextualBandits/result/official/benchmark_eval/adult/MODEL=BNP_ALGO=NPTS
+
+bandit_algo_list:
+  - name: random
+  - name: npts
+    alpha: 1.0
+    n_max_context: 500
+    n_bs: 10
+    online: false
+    backbone:
+      name: BNP
+      dim_x: 93
+      dim_y: 1
+      dim_hid: 128
+      enc_pre_depth: 2
+      enc_post_depth: 2
+      dec_depth: 2
+      ckpt: /data/ContextualBandits/result/official/benchmark_train/adult/MODEL=BNP/ckpt.tar

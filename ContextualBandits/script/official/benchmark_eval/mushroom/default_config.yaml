@@ -1,0 +1,33 @@
+# default config
+
+task: eval
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+bandit_algo_list: null
+      
+data_sampler:
+  name: MushroomDataSampler
+  dim_context: 117
+  num_arms: 2
+  num_contexts: -1
+  r_noeat: 0
+  r_eat_safe: 5
+  r_eat_poison_bad: -35
+  r_eat_poison_good: 5
+  prob_poison_bad: 0.5
+  file_name: /data/ContextualBandits/raw/mushroom.data
+
+bandit_env:
+  name: BaseBanditEnv
+
+evaluator:
+  name: BaseEvaluator
+  num_exp: 1
+  num_steps: 25000

@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/ContextualBandits/result/official/benchmark_train/covertype/MODEL=BNP

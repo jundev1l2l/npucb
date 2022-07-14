@@ -1,0 +1,49 @@
+# default config
+
+task: train
+result: null
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+trainer:
+  name: NPTrainer
+  lr: 5.0e-4
+  num_epochs: 10
+  loss: nll
+  clip_loss: .0
+  val_freq: 1
+  save_freq: 1
+
+model:
+  name: null
+  dim_x: 12
+  dim_y: 1
+  dim_hid: 128
+  enc_v_depth: null
+  enc_qk_depth: null
+  enc_pre_depth: 2
+  enc_post_depth: 2
+  dec_depth: 2
+
+data_sampler:
+    name: R6DataSampler
+    raw_dir: /home/junhyun/data/R6NewsRecommendation/raw
+    processed_dir: /home/junhyun/data/R6NewsRecommendation/processed
+    num_contexts: 50000
+    day: [1,]
+    reward_balance: -1
+
+dataset:
+  name: NPRandomDataset
+  n_ctx_range: [50, 500]
+  n_tar_range: [10, 50]
+
+dataloader:
+  name: TorchDataloader
+  batch_size: 32

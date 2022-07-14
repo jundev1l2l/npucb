@@ -1,0 +1,9 @@
+model:
+  name: MLP
+  dim_hid: [64, 128, 128, 256, 512, 256, 128, 64, 32,]
+
+trainer:
+  loss: mse
+  lr: 1.0e-4
+
+result: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=64/MODEL=MLP_2

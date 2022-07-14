@@ -1,0 +1,8 @@
+model:
+  name: NP
+  enc_pre_depth: 2
+  enc_post_depth: 2
+  dec_depth: 2
+  dim_hid: 128
+
+result: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=4/MODEL=NP

@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+# Personally Added
+.idea/
+*.DS_store
+.vscode/
+*/__pycache__/
+
+>>>>>>> 8d8f8df (FEAT: initial commit)
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

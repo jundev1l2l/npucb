@@ -1,0 +1,4 @@
+model:
+  name: NP
+
+result: /data/R6NewsRecommendation/result/official/DAY=12345/train/MODEL=NP

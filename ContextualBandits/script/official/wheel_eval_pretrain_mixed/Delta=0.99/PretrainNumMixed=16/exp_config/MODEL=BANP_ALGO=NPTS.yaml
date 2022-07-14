@@ -1,0 +1,20 @@
+result: /data/ContextualBandits/result/official/wheel_eval_pretrain_mixed/Delta=0.99/PretrainNumMixed=16/MODEL=BANP_ALGO=NPTS
+
+bandit_algo_list:
+  - name: random
+  - name: npts
+    alpha: 1.0
+    n_max_context: 500
+    n_bs: 10
+    online: false
+    backbone:
+      name: BANP
+      dim_x: 3
+      dim_y: 1
+      dim_hid: 128
+      enc_v_depth: 2
+      enc_qk_depth: 2
+      enc_pre_depth: 2
+      enc_post_depth: 2
+      dec_depth: 2
+      ckpt: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=16/MODEL=BANP/ckpt.tar

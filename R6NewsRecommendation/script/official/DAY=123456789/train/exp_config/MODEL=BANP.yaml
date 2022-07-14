@@ -1,0 +1,9 @@
+model:
+  name: BANP
+  enc_v_depth: 2
+  enc_qk_depth: 2
+
+trainer:
+  num_epochs: 30
+  
+result: /data/R6NewsRecommendation/result/official/DAY=123456789/train/MODEL=BANP

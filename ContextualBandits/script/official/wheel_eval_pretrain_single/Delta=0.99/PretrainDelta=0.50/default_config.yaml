@@ -1,0 +1,35 @@
+# default config
+
+task: eval
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+bandit_algo_list: null
+ 
+data_sampler:
+  name: WheelDataSampler
+  file_name: ""
+  dim_context: 2
+  num_arms: 5
+  num_contexts: -1
+  mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+  std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+  mean_large: 50
+  std_large: 0.01
+  delta: 0.99
+
+bandit_env:
+  name: BaseBanditEnv
+
+evaluator:
+  name: BaseEvaluator
+  num_exp: 1
+  num_steps: 25000
+  plot_freq: 100
+

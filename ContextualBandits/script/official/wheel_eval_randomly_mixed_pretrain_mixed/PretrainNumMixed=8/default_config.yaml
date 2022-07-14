@@ -1,0 +1,75 @@
+# default config
+
+task: eval
+
+debug: False
+wandb_mode: online
+seed: 0
+
+engine:
+  name: DDPEngine
+  backend: nccl
+
+bandit_algo_list: null
+ 
+data_sampler:
+  - name: WheelDataSampler
+    file_name: ""
+    dim_context: 2
+    num_arms: 5
+    num_contexts: -1
+    mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+    std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+    mean_large: 50
+    std_large: 0.01
+    delta: 0.5
+  - name: WheelDataSampler
+    file_name: ""
+    dim_context: 2
+    num_arms: 5
+    num_contexts: -1
+    mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+    std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+    mean_large: 50
+    std_large: 0.01
+    delta: 0.7
+  - name: WheelDataSampler
+    file_name: ""
+    dim_context: 2
+    num_arms: 5
+    num_contexts: -1
+    mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+    std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+    mean_large: 50
+    std_large: 0.01
+    delta: 0.9
+  - name: WheelDataSampler
+    file_name: ""
+    dim_context: 2
+    num_arms: 5
+    num_contexts: -1
+    mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+    std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+    mean_large: 50
+    std_large: 0.01
+    delta: 0.95
+  - name: WheelDataSampler
+    file_name: ""
+    dim_context: 2
+    num_arms: 5
+    num_contexts: -1
+    mean_list: [1.2, 1.0, 1.0, 1.0, 1.0]
+    std_list: [0.05, 0.05, 0.05, 0.05, 0.05]
+    mean_large: 50
+    std_large: 0.01
+    delta: 0.99
+
+bandit_env:
+  name: BaseBanditEnv
+
+evaluator:
+  name: NewEnvEvaluator
+  num_exp: 1
+  num_steps: 25000
+  plot_freq: 100
+  new_envs_at_steps: [[2, 0], [3, 500], [1, 1000], [3, 1500], [3, 2000], [2, 2500], [4, 3000], [2, 3500], [3, 4000], [1, 4500], [4, 5000], [1, 5500], [4, 6000], [0, 6500], [4, 7000], [4, 7500], [0, 8000], [3, 8500], [4, 9000], [3, 9500], [0, 10000], [0, 10500], [3, 11000], [1, 11500], [3, 12000], [4, 12500], [2, 13000], [0, 13500], [0, 14000], [4, 14500], [2, 15000], [0, 15500], [0, 16000], [4, 16500], [1, 17000], [3, 17500], [0, 18000], [3, 18500], [0, 19000], [3, 19500], [0, 20000], [2, 20500], [3, 21000], [2, 21500], [2, 22000], [3, 22500], [3, 23000], [4, 23500], [2, 24000], [0, 24500]]

@@ -1,0 +1,5 @@
+\begin{figure}[h!] 
+\centering
+\includegraphics[width=5in]{figure/raw/delta=0.50_reward_prediction_BANP/.png}
+\label{fig:delta=0.50_reward_prediction_BANP/}
+\end{figure}

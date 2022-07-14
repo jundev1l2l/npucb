@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/R6NewsRecommendation/result/official/DAY=12345/train/MODEL=BNP

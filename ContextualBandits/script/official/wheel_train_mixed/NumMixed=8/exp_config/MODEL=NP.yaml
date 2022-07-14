@@ -1,0 +1,4 @@
+model:
+  name: NP
+
+result: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=8/MODEL=NP

@@ -1,0 +1,5 @@
+\begin{figure}[h!] 
+\centering
+\includegraphics[width=5in]{figure/raw/num_mixed=16_reward_prediction_BANP/.png}
+\label{fig:num_mixed=16_reward_prediction_BANP/}
+\end{figure}

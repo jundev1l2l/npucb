@@ -1,0 +1,10 @@
+model:
+  name: BANP
+  enc_v_depth: 2
+  enc_qk_depth: 2
+  enc_pre_depth: 2
+  enc_post_depth: 2
+  dec_depth: 2
+  dim_hid: 128
+
+result: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=64/MODEL=BANP

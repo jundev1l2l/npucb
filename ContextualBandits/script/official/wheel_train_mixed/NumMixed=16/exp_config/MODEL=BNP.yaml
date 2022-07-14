@@ -1,0 +1,4 @@
+model:
+  name: BNP
+
+result: /data/ContextualBandits/result/official/wheel_train_mixed/NumMixed=16/MODEL=BNP

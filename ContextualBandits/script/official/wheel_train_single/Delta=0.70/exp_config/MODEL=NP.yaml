@@ -1,0 +1,4 @@
+model:
+  name: NP
+
+result: /data/ContextualBandits/result/official/wheel_train_single/Delta=0.70/MODEL=NP

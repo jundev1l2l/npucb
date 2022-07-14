@@ -1,0 +1,4 @@
+model:
+  name: NP
+
+result: /data/ContextualBandits/result/official/benchmark_train/census/MODEL=NP
