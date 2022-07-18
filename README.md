@@ -1,4 +1,4 @@
-# UCB Algorithm with Neural Processes (NP-UCB) for Contextual Bandits
+# Pytorch Implementation of UCB Algorithm with Neural Processes (NP-UCB) for Contextual Bandits
 
 This repository contains the codes for my master thesis paper, *"Empirical Study on Contextual Bandit Algorithms with Neural Processes"*.
 All the works are done when I am a graduate student of Graduate School of Artificial Intelligence (AIGS), Ulsan National Institue of Science and Technology (UNIST), and a member of Learning Intelligence Machine Laboratory (LIM Lab).
