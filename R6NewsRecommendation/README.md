@@ -5,10 +5,20 @@
 
 - For **training** with Yahoo R6a Dataset, use configuration files in `script/train`
   - ex) Train BANP on Day 1 Data
-  `python main.py --project train_banp_news --default_config script/train/example/default_config.yaml --exp_config script/train/example/exp_config/MODEL=BANP.yaml`
+  ```
+  python main.py \
+  --project train_banp_news \
+  --default_config script/train/example/default_config.yaml \
+  --exp_config script/train/example/exp_config/MODEL=BANP.yaml
+  ```
 - For **evaluation**, use configuration files in `script/eval`
   - ex) Evaluation on News Recommendation with BANP and NP-UCB
-  `python main.py --project eval_banp_news --default_config script/eval/example/default_config.yaml --exp_config script/eval/example/exp_config/MODEL=BANP_ALGO=NPUCB.yaml`
+  ```
+  python main.py \
+  --project eval_banp_news \
+  --default_config script/eval/example/default_config.yaml \
+  --exp_config script/eval/example/exp_config/MODEL=BANP_ALGO=NPUCB.yaml
+  ```
 
 
 ## Features Implemented
