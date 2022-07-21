@@ -12,7 +12,7 @@
   --exp_config script/train/example/exp_config/MODEL=BANP.yaml
   ```
 - For **evaluation**, use configuration files in `script/eval`
-  - ex) Evaluation on Day 1-7 with BANP and NP-UCB
+  - ex) Evaluation on Day 1 with BANP and NP-UCB
   ```
   python main.py \
   --project eval_banp_news \
