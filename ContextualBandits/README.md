@@ -5,10 +5,20 @@
 
 - For **training** with Contextual Bandit Benchmark datasets, use configuration files in `script/train`
   - ex) Train BANP on Wheel Bandit Dataset
-  `python main.py --project train_banp_wheel --default_config script/train/example/default_config.yaml --exp_config script/train/example/exp_config/MODEL=BANP.yaml`
+  ```
+  python main.py \
+  --project train_banp_wheel \
+  --default_config script/train/example/default_config.yaml \
+  --exp_config script/train/example/exp_config/MODEL=BANP.yaml
+  ```
 - For **evaluation**, use configuration files in `script/eval`
   - ex) Evaluation on Wheel Bandit with BANP and NP-UCB
-  `python main.py --project eval_banp_wheel --default_config script/eval/example/default_config.yaml --exp_config script/eval/example/exp_config/MODEL=BANP_ALGO=NPUCB.yaml`
+  ```
+  python main.py \
+  --project eval_banp_wheel \
+  --default_config script/eval/example/default_config.yaml \
+  --exp_config script/eval/example/exp_config/MODEL=BANP_ALGO=NPUCB.yaml
+  ```
 
 
 ## Features Implemented
