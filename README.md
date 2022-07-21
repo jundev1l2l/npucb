@@ -14,7 +14,7 @@ In detail, `script/official/{experiment_group}/` contains `default.yaml` and `ex
 At `ContextualBandits/` or `R6NewsRecommendation/`, run experiment with 
 ```
 python main.py \
---project {project_name_for_logging (wandb)} \
+--project {project_name_for_logging_wandb} \
 --task {train_or_eval} \
 --default_config script/official/{experiment_group}/default.yaml \
 --exp_config script/official/{experiment_group}/exp_config/{experiment_name}.yaml \
