@@ -4,7 +4,7 @@
 ## How to run code
 
 - For **training** with Yahoo R6a Dataset, use configuration files in `script/train`
-  - ex) Train BANP on Day 1 data
+  - ex) Train BANP on Day 1
   ```
   python main.py \
   --project train_banp_news \
